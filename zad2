@@ -1,27 +1,18 @@
+import java.util.Scanner;
 public class Main {
-    
+
     public static void main(String[] args) {
-         System.out.println("\nResult = "
-                + szukaj("szukaj", "szukaj?"));}
-                
-    public static boolean szukaj(String subString, String mainString) {
-        boolean znalezione = false;
-        int max = mainString.length() - subString.length();
-        
-        sprawdzanie: for (int i = 0; i <= max; i++) {
-            int n = subString.length();
-            int j = i;
-            int k = 0;
-            while (n-- != 0) {
-                if (mainString.charAt(j++) != subString.charAt(k++)) {
-                    continue sprawdzanie;
-                }
-            }
-            znalezione = true;
-            break sprawdzanie;
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj pierwszy ciąg");
+        String wyszukiwana = scan.nextLine();
+
+        if (wyszukiwana.indexOf( "ciag" ) != -1) {
+            System.out.println("Jest"); 
+        } else {
+            System.out.println("Nie ma");
         }
-        System.out.println(znalezione ? "\n Ciąg zawiera drugi ciąg"
-                : "\n Ciąg nie zawiera drugiego ciągu");
-        return znalezione;
+
     }
+
 }
