@@ -1,14 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        while(licznik<51){
+        int licznik = 1;
+        while(licznik<50){
   if(licznik%3==0){
-    System.out.println( licznik + " foo " )};
-   elif (licznik%5==0){
-    System.out.println( licznik + " bar " )};
-  elif (licznik%7==0){
-    System.out.println( licznik + " baz " )};
+    System.out.println( licznik + " foo " );}
+   else if (licznik%5==0){
+    System.out.println( licznik + " bar " );}
+  else if (licznik%7==0){
+    System.out.println( licznik + " baz " );}
 else{
-  System.out.println( licznik )
+  System.out.println( licznik );
 }
 		  licznik++;
 	  }
